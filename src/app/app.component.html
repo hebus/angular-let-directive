@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+<!-- pass a string value -->
+<p *sqLet="'abc'; let n; let c = complete">
+  Start editing to see some magic happen :)
+  {{ n }} / {{ c }}
+  <hello name="{{ n }}"></hello>
+</p>
+<!-- pass a defined property -->
+<p *sqLet="name; let n; let c = complete">
+  Start editing to see some magic happen :)
+  {{ n }} / {{ c }}
+  <hello name="{{ n }}">{{ c }}</hello>
+</p>
